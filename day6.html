@@ -1,0 +1,42 @@
+<html>
+  <body>
+    Check smallest and secondLargest value
+
+    <button onclick="findtheSmallestandSecondLargest()">Check Now</button>
+  </body>
+
+  <script>
+    function findtheSmallestandSecondLargest() {
+      const nums = [1, 2, 4, 7, 7, 5];
+      let smallestValue = Infinity;
+      let largestValue = -Infinity;
+
+      let secondSmallest = Infinity;
+
+      let secondLargestValue = -Infinity;
+
+      for (let i = 0; i < nums.length; i++) {
+        debugger;
+        console.log(nums[i]);
+        if (nums[i] < smallestValue) {
+          debugger;
+          secondSmallest = smallestValue;
+          smallestValue = nums[i];
+          console.log(smallestValue, "smallestValue");
+        } else if (nums[i] < secondSmallest && nums[i] !== smallestValue) {
+          debugger;
+          secondSmallest = nums[i];
+          console.log("secondSmallest", secondSmallest);
+        }
+
+        //  if (nums[i] > largestValue) {
+        //   largestValue = nums[i];
+        //   console.log(largestValue, "largestValue");
+        // }
+      }
+    }
+
+    // Found smallest value
+    // largest value ?
+  </script>
+</html>
